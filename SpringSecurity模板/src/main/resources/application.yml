@@ -1,0 +1,14 @@
+spring:
+  datasource:
+    username: root
+    password: qsj123
+    #?serverTimezone=UTC解决时区的报错
+    url: jdbc:mysql://localhost:3306/baima?serverTimezone=UTC%2B8&useUnicode=true&characterEncoding=utf-8
+    driver-class-name: com.mysql.cj.jdbc.Driver
+  servlet:
+    multipart:
+      enabled: true
+      max-file-size: 100MB
+      max-request-size: 101MB
+server:
+  port: 8080
