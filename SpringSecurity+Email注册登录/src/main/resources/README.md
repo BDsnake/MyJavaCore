@@ -1,0 +1,3 @@
+SpringSecurity+email注册登录
+
+yml中Mybatis-Plus的配置是无效的，可去

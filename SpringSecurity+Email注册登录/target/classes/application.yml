@@ -1,0 +1,35 @@
+spring:
+  datasource:
+    username: root
+    password: qsj123
+    #?serverTimezone=UTC解决时区的报错
+    url: jdbc:mysql://localhost:3306/baima?serverTimezone=UTC%2B8&useUnicode=true&characterEncoding=utf-8
+    driver-class-name: com.mysql.cj.jdbc.Driver
+  servlet:
+    multipart:
+      enabled: true
+      max-file-size: 100MB
+      max-request-size: 101MB
+  mail:
+    host: smtp.qq.com
+    port: 465
+    username: 295935489@qq.com
+    password: xjatwolmbkmbbhjb
+  redis:
+    host: 127.0.0.1
+    port: 6379
+    timeout: 30000
+    jedis:
+      pool:
+        max-active: 30
+        max-wait: 3000
+        max-idle: 10
+      lettuce:
+        shutdown-timeout: 0
+  mybatis-plus:
+    configuration:
+      log-impl: org.apache.ibatis.logging.stdout.StdOutImpl
+      map-underscore-to-camel-case: true
+
+server:
+  port: 8080
